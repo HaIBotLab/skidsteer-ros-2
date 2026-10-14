@@ -1,0 +1,8 @@
+image: map_real_1.pgm
+resolution: 0.1
+# origin: [-102.4, -102.4, 0.0]
+origin: [-68.0, -78.5, 0.0]
+origin: [-68.0, -78.5, 0.0]
+occupied_thresh: 0.5
+free_thresh: 0.2
+negate: 0

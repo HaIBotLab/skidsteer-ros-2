@@ -1,0 +1,8 @@
+Global Options:
+  Fixed Frame: map
+
+Displays:
+  - LaserScan (/scan)
+  - TF (/tf)
+  - OccupancyGrid (/map)
+
