@@ -49,7 +49,7 @@ Basic familiarity with Linux, Git, and ROS 2 is recommended.
 
 ### Hardware platform
 
-The software is designed for a skid-steer mobile robot.
+....
 
 ## 4. Prerequisites
 
@@ -67,12 +67,14 @@ Before building the workspace, prepare:
 
 Additional dependencies may be required by individual packages.
 
-## 5. Tutorial: Build, Launch and Run
+## 5. Tutorial: Build, Run and Launch
 
 This tutorial explains how to prepare the ROS 2 environment, build the
 workspace, inspect ROS 2 nodes and topics, and launch the robot software.
 
 ### 5.1. Build the project
+First, you should build all workspace. Remember to supply power to the devices and sensors, such as the IMU, Lidar, ESP32, and the two motor drivers. Crucially, the robot must have its wheels locked (i.e., velocity at zero) before the entire system is started. 
+Important Note: Power the driver first and the ESP32 second; the robot's wheels will then lock.
 
 Copy and run the following commands:
 ```bash
@@ -81,6 +83,7 @@ source /opt/ros/humble/setup.bash
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install --parallel-workers 1
 ```
+### 5.2 Launch the project
 After successfully building the workspace, run the commands below to start the system:
 ```bash
 cd ~/skid_robot_v2
