@@ -50,3 +50,39 @@ Basic familiarity with Linux, Git, and ROS 2 is recommended.
 ### Hardware platform
 
 The software is designed for a skid-steer mobile robot.
+
+## 4. Prerequisites
+
+Before building the workspace, prepare:
+
+- Ubuntu 22.04 LTS
+- ROS 2 Humble
+- Git
+- Python 3 and pip, as required by the packages
+- colcon build tools
+- rosdep
+- Dependencies declared by the ROS 2 packages
+- micro-ROS tools and the required embedded firmware environment
+- A compatible joystick or PS3 controller, if using teleoperation
+
+Additional dependencies may be required by individual packages.
+
+## 5. Tutorial: Build, Launch and Run
+
+This tutorial explains how to prepare the ROS 2 environment, build the
+workspace, inspect ROS 2 nodes and topics, and launch the robot software.
+
+### 5.1. Build the project
+
+Copy and run the following commands:
+```bash
+cd ~/skid_robot_v2
+source /opt/ros/humble/setup.bash
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install --parallel-workers 1
+```
+After successfully building the workspace, run the commands below to start the system:
+```bash
+cd ~/skid_robot_v2
+ros2 launch bringup bringup_2.py
+```
