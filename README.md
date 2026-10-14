@@ -1,11 +1,8 @@
 # skidsteer-ros-2
 Skidsteer | ROS 2 Humble | Ubuntu 22.04
 
-## How to run?
-```bash
-micro-ros -> kinematic -> joy_node -> ps3
-```
 ---
+
 ## 1. Project Overview
 
 This repository contains software components for developing and operating
@@ -19,7 +16,6 @@ The current workflow is organized around:
 - micro-ROS communication
 - Robot kinematics
 - PS3 controller teleoperation
-- Navigation2 with controllers: RPP, MPPI
 
 The exact nodes, topics, launch files, and hardware interfaces depend on
 the implementation in this repository.
@@ -49,7 +45,20 @@ Basic familiarity with Linux, Git, and ROS 2 is recommended.
 
 ### Hardware platform
 
-....
+The robot is a skid-steer controlled using ROS 2 Humble.
+
+### Hardware Components
+- **Robot Platform:** Skid-steering
+- **Input Device:** MC6C, PS3
+- **Motor Control:** Driver ZLAC8015D
+- **Communication:** RS485
+- **Sensors:** IMU, LiDAR, Encoders on the four wheels
+- **Power Supply:** 12V and 24V DC
+
+### Hardware Specifications
+- **Number of Wheels:** 4
+- **Maximum Speed:** 150-200 RPM
+- **Operating Voltage:** 24V 
 
 ## 4. Prerequisites
 
