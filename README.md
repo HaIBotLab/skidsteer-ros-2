@@ -74,7 +74,8 @@ workspace, inspect ROS 2 nodes and topics, and launch the robot software.
 
 ### 5.1. Build the project
 First, you should build all workspace. Remember to supply power to the devices and sensors, such as the IMU, Lidar, ESP32, and the two motor drivers. Crucially, the robot must have its wheels locked (i.e., velocity at zero) before the entire system is started. 
-Important Note: Power the driver first and the ESP32 second; the robot's wheels will then lock.
+
+***Important Note: Power the driver first and the ESP32 second; the robot's wheels will then lock.***
 
 Copy and run the following commands:
 ```bash
