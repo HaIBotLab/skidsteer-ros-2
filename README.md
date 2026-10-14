@@ -48,5 +48,6 @@ Remember to supply power to the devices and sensors, such as the IMU, Lidar, ESP
 After successfully building the workspace, run the commands below to start the system:
 ```bash
 cd ~/skid_robot_v2
+source install/setup.bash
 ros2 launch bringup bringup_2.py
 ```
