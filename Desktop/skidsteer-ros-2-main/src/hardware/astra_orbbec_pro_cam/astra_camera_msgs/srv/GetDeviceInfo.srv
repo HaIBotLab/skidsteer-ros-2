@@ -1,0 +1,4 @@
+---
+astra_camera_msgs/DeviceInfo info
+bool success
+string message

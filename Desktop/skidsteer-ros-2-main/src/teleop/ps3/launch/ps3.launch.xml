@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="ps3" exec="ps3" name="ps3">
+        <param name="linear_speed_scale" value="0.0"/>
+        <param name="angular_speed_scale" value="0.6"/>
+        <param name="input_topic" value="joy"/>
+        <param name="output_topic" value="cmd_vel"/>
+    </node>
+    <node pkg="joy" exec="joy_node" name="joy_node"/>
+</launch>

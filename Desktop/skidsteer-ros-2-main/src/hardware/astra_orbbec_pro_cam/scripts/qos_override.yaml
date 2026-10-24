@@ -1,0 +1,9 @@
+/PointCloudXyzNode:
+  ros__parameters:
+    qos_overrides:
+      /camera/depth/image_raw:
+        subscriber:
+          reliability: best_effort
+      /camera/depth/camera_info:
+        subscriber:
+          reliability: best_effort
